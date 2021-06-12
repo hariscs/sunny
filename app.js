@@ -1,5 +1,6 @@
 const menu = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
+const close = document.querySelector('.close');
 
 // function
 function onClick() {
@@ -17,4 +18,4 @@ function appear() {
 // event listener
 menu.addEventListener('click', onClick);
 menu.addEventListener('click', appear);
-menu.addEventListener('click', disappear);
+close.addEventListener('click', disappear);
