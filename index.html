@@ -13,6 +13,7 @@
 		/>
 
 		<title>Frontend Mentor | Sunnyside agency landing page</title>
+		<link rel="stylesheet" href="css/style.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
@@ -40,7 +41,7 @@
 					</div>
 
 					<div class="menu">
-						<span>menu</span>
+						<span>#</span>
 					</div>
 				</nav>
 
@@ -76,11 +77,21 @@
 				</div>
 
 				<div class="transform-img">
-					<img
-						src="./images/desktop/image-transform.jpg"
-						alt="image-transform"
-						class="image-transform"
-					/>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="./images/mobile/image-transform.jpg"
+						/>
+						<source
+							media="(min-width: 500px)"
+							srcset="./images/desktop/image-transform.jpg"
+						/>
+						<img
+							src="./images/desktop/image-transform.jpg"
+							alt="image-transform"
+							class="image-transform"
+						/>
+					</picture>
 				</div>
 			</div>
 		</section>
@@ -101,11 +112,21 @@
 				</div>
 
 				<div class="standout-img">
-					<img
-						src="./images/desktop/image-stand-out.jpg"
-						alt="image-stand-out"
-						class="image-standout"
-					/>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="./images/mobile/image-stand-out.jpg"
+						/>
+						<source
+							media="(min-width: 500px)"
+							srcset="./images/desktop/image-stand-out.jpg"
+						/>
+						<img
+							src="./images/desktop/image-stand-out.jpg"
+							alt="image-stand-out"
+							class="image-standout"
+						/>
+					</picture>
 				</div>
 			</div>
 		</section>
@@ -113,7 +134,9 @@
 		<!-- two images section -->
 		<section>
 			<div class="images-flex">
-				<div class="img-one">
+
+				<!-- image 1 -->
+				<div class="design">
 					<div class="container">
 						<h2 class="img-title">Graphic design</h2>
 						<p class="img-subtitle">
@@ -122,9 +145,11 @@
 							attention.
 						</p>
 					</div>
+
 				</div>
 
-				<div class="img-two">
+				<!-- image 2 -->
+				<div class="photography">
 					<div class="container">
 						<h2 class="img-title">Photography</h2>
 						<p class="img-subtitle">
@@ -132,42 +157,177 @@
 							high-quality photos that improve your business image.
 						</p>
 					</div>
+
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- testimonials section -->
-		<section></section>
+		<section>
+			<div class="container">
+				<h3 class="client-heading">Client testimonials</h3>
+				<div class="cards">
+					<!-- card one -->
+					<div class="card-one">
+						<div class="card-header">
+							<img
+								src="./images/image-emily.jpg"
+								alt="Emily"
+								class="card-img"
+							/>
+							<p class="card-testimonial">
+								We put our trust in Sunnyside and they delivered, making sure
+								our needs were met and deadlines were always hit.
+							</p>
+							<div class="profile-info">
+								<h3 class="card-name">Emily R.</h3>
+								<p class="card-info">Marketing Director</p>
+							</div>
+						</div>
+					</div>
 
+					<!-- card two -->
+					<div class="card-two">
+						<div class="card-header">
+							<img
+								src="./images/image-thomas.jpg"
+								alt="Thomas"
+								class="card-img"
+							/>
+							<p class="card-testimonial">
+								Sunnyside’s enthusiasm coupled with their keen interest in our
+								brand’s success made it a satisfying and enjoyable experience.
+							</p>
+							<div class="profile-info">
+								<h3 class="card-name">Thomas S.</h3>
+								<p class="card-info">Chief Operating Officer</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- card three -->
+					<div class="card-three">
+						<div class="card-header">
+							<img
+								src="./images/image-jennie.jpg"
+								alt="Jennie"
+								class="card-img"
+							/>
+							<p class="card-testimonial">
+								Incredible end result! Our sales increased over 400% when we
+								worked with Sunnyside. Highly recommended!
+							</p>
+							<div class="profile-info">
+								<h3 class="card-name">Jennie F.</h3>
+								<p class="card-info">Business Owner</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- image gallery -->
+		<section>
+			<div class="img-gallery">
+				<!-- picture one -->
+				<picture>
+					<source
+						media="(max-width: 500px)"
+						srcset="./images/mobile/image-gallery-cone.jpg"
+					/>
+					<source
+						media="(min-width: 500px)"
+						srcset="./images/desktop/image-gallery-cone.jpg"
+					/>
+					<img src="./images/desktop/image-gallery-cone.jpg" alt="cone" />
+				</picture>
+
+				<!-- picture two -->
+				<picture>
+					<source
+						media="(max-width: 500px)"
+						srcset="./images/mobile/image-gallery-milkbottles.jpg"
+					/>
+					<source
+						media="(min-width: 500px)"
+						srcset="./images/desktop/image-gallery-milkbottles.jpg"
+					/>
+					<img
+						src="./images/desktop/image-gallery-milkbottles.jpg"
+						alt="milk bottle"
+					/>
+				</picture>
+
+				<!-- picture three -->
+				<picture>
+					<source
+						media="(max-width: 500px)"
+						srcset="./images/mobile/image-gallery-orange.jpg"
+					/>
+					<source
+						media="(min-width: 500px)"
+						srcset="./images/desktop/image-gallery-orange.jpg"
+					/>
+					<img src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
+				</picture>
+
+				<!-- picture four -->
+				<picture>
+					<source
+						media="(max-width: 500px)"
+						srcset="./images/mobile/image-gallery-sugar-cubes.jpg"
+					/>
+					<source
+						media="(min-width: 500px)"
+						srcset="./images/desktop/image-gallery-sugarcubes.jpg"
+					/>
+					<img
+						src="./images/desktop/image-gallery-sugarcubes.jpg"
+						alt="sugar cubes"
+					/>
+				</picture>
+			</div>
+		</section>
 		<!-- main footer -->
-		<footer></footer>
+		<footer>
+			<div class="container">
+				<div class="logo">
+					<img src="./images/logo.svg" alt="logo" />
+				</div>
+
+				<div class="links">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Projects</a></li>
+					</ul>
+				</div>
+
+				<div class="icons">
+					<a href="#" class="icon">
+						<img src="./images/icon-facebook.svg" alt="facebook" />
+					</a>
+					<a href="#" class="icon">
+						<img src="./images/icon-instagram.svg" alt="instagram" />
+					</a>
+					<a href="#" class="icon">
+						<img src="./images/icon-twitter.svg" alt="twitter" />
+					</a>
+					<a href="#" class="icon">
+						<img src="./images/icon-pinterest.svg" alt="pinterest" />
+					</a>
+				</div>
+			</div>
+		</footer>
 
 		<!--   
   About
   Services
   Projects
   Contact
-  Learn more
-
   
-  
-
-  
-  
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
 
   About
   Services
