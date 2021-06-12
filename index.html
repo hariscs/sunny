@@ -33,7 +33,7 @@
 	<body>
 		<!-- main header -->
 		<header>
-			<div class="container">
+			<div class="container header">
 				<!-- navbar -->
 				<nav class="navbar">
 					<div class="logo">
@@ -41,7 +41,9 @@
 					</div>
 
 					<div class="menu">
-						<span>#</span>
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
 					</div>
 				</nav>
 
@@ -65,7 +67,7 @@
 		<section>
 			<div class="transform-flex">
 				<div class="transform-info">
-					<div class="container">
+					<div class="container transform">
 						<h2 class="transform-title">Transform your brand</h2>
 						<p class="transform-subtitle">
 							We are a full-service creative agency specializing in helping
@@ -107,7 +109,7 @@
 							photographers, videographers, and copywriters, we’ll build and
 							extend your brand in digital places.
 						</p>
-						<a href="#" class="btn btn-primary">Learn more</a>
+						<a href="#" class="btn btn-secondary">Learn more</a>
 					</div>
 				</div>
 
@@ -137,7 +139,7 @@
 
 				<!-- image 1 -->
 				<div class="design">
-					<div class="container">
+					<div class="container design-info">
 						<h2 class="img-title">Graphic design</h2>
 						<p class="img-subtitle">
 							Great design makes you memorable. We deliver artwork that
@@ -150,7 +152,7 @@
 
 				<!-- image 2 -->
 				<div class="photography">
-					<div class="container">
+					<div class="container photography-info">
 						<h2 class="img-title">Photography</h2>
 						<p class="img-subtitle">
 							Increase your credibility by getting the most stunning,
@@ -164,9 +166,9 @@
 		</section>
 
 		<!-- testimonials section -->
-		<section>
+		<section class="tests">
 			<div class="container">
-				<h3 class="client-heading">Client testimonials</h3>
+				<h4 class="tests-heading">Client testimonials</h4>
 				<div class="cards">
 					<!-- card one -->
 					<div class="card-one">
@@ -229,19 +231,19 @@
 		</section>
 
 		<!-- image gallery -->
-		<section>
+		<section class="gallery">
 			<div class="img-gallery">
 				<!-- picture one -->
 				<picture>
 					<source
 						media="(max-width: 500px)"
-						srcset="./images/mobile/image-gallery-cone.jpg"
+						srcset="./images/mobile/image-gallery-orange.jpg"
 					/>
 					<source
 						media="(min-width: 500px)"
-						srcset="./images/desktop/image-gallery-cone.jpg"
+						srcset="./images/desktop/image-gallery-orange.jpg"
 					/>
-					<img src="./images/desktop/image-gallery-cone.jpg" alt="cone" />
+					<img src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
 				</picture>
 
 				<!-- picture two -->
@@ -264,14 +266,15 @@
 				<picture>
 					<source
 						media="(max-width: 500px)"
-						srcset="./images/mobile/image-gallery-orange.jpg"
+						srcset="./images/mobile/image-gallery-cone.jpg"
 					/>
 					<source
 						media="(min-width: 500px)"
-						srcset="./images/desktop/image-gallery-orange.jpg"
+						srcset="./images/desktop/image-gallery-cone.jpg"
 					/>
-					<img src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
+					<img src="./images/desktop/image-gallery-cone.jpg" alt="cone" />
 				</picture>
+				
 
 				<!-- picture four -->
 				<picture>
@@ -292,16 +295,16 @@
 		</section>
 		<!-- main footer -->
 		<footer>
-			<div class="container">
+			<div class="container footer">
 				<div class="logo">
 					<img src="./images/logo.svg" alt="logo" />
 				</div>
 
 				<div class="links">
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Projects</a></li>
+					<ul class="link-items">
+						<li class="link"><a href="#" >About</a></li>
+						<li class="link"><a href="#" >Services</a></li>
+						<li class="link"><a href="#" >Projects</a></li>
 					</ul>
 				</div>
 

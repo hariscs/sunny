@@ -21,12 +21,63 @@
 body {
 	font-size: 18px;
 	margin: 0;
-	font-family: 'Barlow', sans-serif;
-	/*	font-family: 'Fraunces', serif; */
+	font-family: 'Fraunces', serif;
 }
 
 img {
 	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	font-family: 'Barlow', sans-serif;
+	line-height: 1.6;
+}
+
+/* buttons */
+.btn {
+	display: inline-block;
+	padding: 1em;
+}
+
+.btn-primary,
+.btn-secondary {
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.2rem;
+}
+
+.btn-primary::before {
+	background: var(--Yellow);
+}
+
+.btn-secondary::before {
+	background: var(--Soft-red);
+}
+
+.btn-primary::before,
+.btn-secondary::before {
+	position: absolute;
+	content: '';
+	bottom: 16px;
+	left: 13px;
+	width: 160px;
+	height: 12px;
+	border-radius: 100vh;
+	z-index: -1;
 }
 
 /* General layout */
@@ -34,4 +85,217 @@ img {
 	width: 90%;
 	max-width: 375px;
 	margin: 0 auto;
+}
+header,
+footer {
+	padding: 2em 0;
+}
+
+section {
+	text-align: center;
+}
+
+/* header */
+header {
+	background-color: var(--Dark-blue);
+	background: url(../images/mobile/image-header.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	color: var(--White);
+}
+
+/* mobile menu */
+.menu {
+	cursor: pointer;
+	padding: 0.3em;
+}
+
+.bar {
+	width: 25px;
+	height: 2px;
+	background: var(--White);
+	margin: 6px 0;
+	margin-top: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* hero */
+
+.hero {
+	text-align: center;
+	padding: 2em 0 6.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-title {
+	font-size: 2.3rem;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	margin-bottom: 1.5em;
+}
+
+/* section transform */
+.transform-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.transform-img {
+	order: -1;
+}
+
+/* section stand out */
+.standout-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.transform-info,
+.standout-info {
+	padding: 4em 0;
+}
+
+.standout-img {
+	order: -1;
+}
+
+.transform-title,
+.standout-title {
+	font-size: 2.5rem;
+	margin-top: 0;
+	color: var(--Very-dark-desaturated-blue);
+}
+
+.transform-subtitle,
+.standout-subtitle {
+	color: var(--Very-dark-grayish-blue);
+	max-width: 32ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* two images section */
+
+.design {
+	background: url(../images/mobile/image-graphic-design.jpg) no-repeat;
+	background-position: center;
+}
+
+.photography {
+	background: url(../images/mobile/image-photography.jpg) no-repeat;
+	background-position: center;
+}
+
+.design-info,
+.photography-info {
+	padding-top: 100%;
+	color: var(--Dark-desaturated-cyan);
+}
+
+.design,
+.photography {
+	background-size: cover;
+	padding: 2em 0;
+}
+
+.photography-info {
+	color: var(--Dark-blue);
+}
+
+.img-title {
+	text-transform: capitalize;
+}
+
+.tests {
+	padding: 2em 0;
+}
+
+.tests-heading {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: var(--Grayish-blue);
+	margin-bottom: 3em;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+}
+
+.card-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-testimonial {
+	max-width: 32ch;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--Very-dark-grayish-blue);
+}
+
+.card-img {
+	max-width: 70px;
+	border-radius: 100vh;
+}
+
+.card-name {
+	margin-bottom: 0.3em;
+	color: var(--Dark-desaturated-cyan);
+}
+
+.card-info {
+	margin-top: 0;
+	color: var(--Grayish-blue);
+}
+
+/* image gallery section*/
+.img-gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 0;
+}
+
+/* footer */
+footer {
+	background: var(--Dark-moderate-cyan);
+	font-family: 'Barlow', sans-serif;
+	padding: 4em 0;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2em;
+}
+
+.link-items {
+	display: flex;
+}
+
+.link-items a {
+	color: var(--Dark-blue);
+}
+
+.link + .link {
+	margin-left: 3em;
+}
+
+.icons {
+	display: flex;
+}
+
+.icon + .icon {
+	margin-left: 1.5em;
 }
