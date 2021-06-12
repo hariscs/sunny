@@ -108,6 +108,7 @@ header {
 /* mobile menu */
 .menu {
 	cursor: pointer;
+	display: none;
 }
 
 .navbar {
