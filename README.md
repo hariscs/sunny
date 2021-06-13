@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/hariscs/sunny)
-- Live Site URL: [Add live site URL here](https://sunnyagency.netlify.app/)
+- Solution URL: [GitHub](https://github.com/hariscs/sunny)
+- Live Site URL: [Netlify](https://sunnyagency.netlify.app/)
 
 ### Built with
 
