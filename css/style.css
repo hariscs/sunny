@@ -121,6 +121,11 @@ header {
 	color: var(--White);
 }
 
+.nav-link:hover,
+.nav-link:focus {
+	text-decoration: underline;
+}
+
 .menu {
 	display: none;
 	cursor: pointer;
@@ -134,6 +139,14 @@ header {
 	text-transform: uppercase;
 	font-family: 'Fraunces', serif;
 	font-size: 0.9rem;
+}
+
+.current:focus,
+.current:hover {
+	background: transparent;
+	border: 1px solid var(--White);
+	color: var(--White);
+	text-decoration: none;
 }
 
 /* hero */
