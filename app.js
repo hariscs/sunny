@@ -1,21 +1,6 @@
-const menu = document.querySelector('.menu');
-const mobileMenu = document.querySelector('.mobile-menu');
-const close = document.querySelector('.close');
+const toggleButton = document.getElementById('toggle-button');
+const naviList = document.getElementById('navi-list');
 
-// function
-function onClick() {
-	menu.classList.toggle('change');
-}
-
-function disappear() {
-	mobileMenu.style.transform = 'translateX(100%)';
-}
-
-function appear() {
-	mobileMenu.style.transform = 'translateX(0)';
-}
-
-// event listener
-menu.addEventListener('click', onClick);
-menu.addEventListener('click', appear);
-close.addEventListener('click', disappear);
+toggleButton.addEventListener('click', () => {
+	naviList.classList.toggle('active');
+});
