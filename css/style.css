@@ -132,7 +132,7 @@ header {
 }
 
 .current {
-	background: var(--Yellow);
+	background: var(--White);
 	color: var(--Dark-desaturated-cyan);
 	border-radius: 100vh;
 	padding: 0.6em 0.5em;
@@ -355,6 +355,9 @@ footer .logo img {
 		top: 20px;
 	}
 
+	.current {
+		background: var(--Yellow);
+	}
 	.nav-list {
 		width: 80%;
 		text-align: center;
